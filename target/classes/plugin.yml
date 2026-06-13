@@ -1,0 +1,111 @@
+name: DeluxePlayerOptionsReD
+version: 3.0.0
+main: net.redm1ne.deluxeplayeroptionsred.DeluxePlayerOptions
+api-version: 1.16
+author: ReDM1ne
+description: Advanced player options for lobby servers. Unified JAR version.
+website: https://redm1ne.net
+softdepend:
+  - PlaceholderAPI
+  - icJukeBox
+  - JukeBox
+  - PlayerPoints
+  - Vault
+
+commands:
+  playeroptions:
+    description: Main command for DeluxePlayerOptionsReD
+    usage: /<command> [reload|help]
+    aliases: [po, dpo, deluxeplayeroptions]
+    permission: deluxeplayeroptions.admin
+  options:
+    description: Open the player options menu
+    usage: /<command>
+    aliases: [opt]
+    permission: deluxeplayeroptions.menu
+  speed:
+    description: Toggle speed mode
+    usage: /<command>
+    aliases: [spe]
+    permission: deluxeplayeroptions.speed
+  fly:
+    description: Toggle fly mode
+    usage: /<command>
+    aliases: [fl]
+    permission: deluxeplayeroptions.fly
+  jump:
+    description: Toggle jump boost
+    usage: /<command>
+    aliases: [jum]
+    permission: deluxeplayeroptions.jump
+  doublejump:
+    description: Toggle double jump
+    usage: /<command>
+    aliases: [djum]
+    permission: deluxeplayeroptions.doublejump
+  stacker:
+    description: Toggle stacker mode
+    usage: /<command>
+    aliases: [stak]
+    permission: deluxeplayeroptions.stacker
+  visibility:
+    description: Toggle player visibility
+    usage: /<command>
+    aliases: [visi]
+    permission: deluxeplayeroptions.visibility
+  chat:
+    description: Toggle chat visibility
+    usage: /<command>
+    aliases: [cha]
+    permission: deluxeplayeroptions.chat
+  radio:
+    description: Toggle radio
+    usage: /<command>
+    aliases: [ra]
+    permission: deluxeplayeroptions.radio
+  pvp:
+    description: Toggle PvP mode
+    usage: /<command>
+    aliases: [playervsplayer]
+    permission: deluxeplayeroptions.pvp
+
+permissions:
+  deluxeplayeroptions.admin:
+    description: Admin permission for reload and other admin commands
+    default: op
+  deluxeplayeroptions.reload:
+    description: Permission to reload plugin configuration
+    default: op
+  deluxeplayeroptions.menu:
+    description: Permission to use the options menu
+    default: true
+  deluxeplayeroptions.speed:
+    description: Permission to use speed option
+    default: true
+  deluxeplayeroptions.fly:
+    description: Permission to use fly option
+    default: true
+  deluxeplayeroptions.jump:
+    description: Permission to use jump boost option
+    default: true
+  deluxeplayeroptions.doublejump:
+    description: Permission to use double jump option
+    default: true
+  deluxeplayeroptions.stacker:
+    description: Permission to use stacker option
+    default: true
+  deluxeplayeroptions.visibility:
+    description: Permission to use visibility option
+    default: true
+  deluxeplayeroptions.chat:
+    description: Permission to use chat option
+    default: true
+  deluxeplayeroptions.radio:
+    description: Permission to use radio option
+    default: true
+  deluxeplayeroptions.pvp:
+    description: Permission to use PvP option
+    default: true
+  deluxeplayeroptions.visibility.vip:
+    description: Always visible to other players
+    default: op
